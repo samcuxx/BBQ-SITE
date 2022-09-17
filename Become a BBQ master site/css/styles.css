@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+}
+
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  margin: 0;
+}
+h2 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.top-text {
+  margin: 0;
+  padding-top: -2px;
+  font-size: 0.625rem;
+  font-weight: 900;
+  color: #f18119;
+  order: -1;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left,#ff713b,#ffa51d) 1;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/* ===========================
+intro
+============================= */
+
+.intro {
+  background-image: url(../images/ribs.jpg),linear-gradient(45deg,red,blue);
+  background-color: #404040;
+  background-blend-mode:screen;
+  padding: 0 0.25em 1em;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+/* =============================
+main content
+==================================== */
+
+.main-content {
+  padding: 2em 1em;
+}
+
+
+
+.intro > *,
+.main-content > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================
+media
+============================ */
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.125rem;
+    /* background-color: magenta; */
+    display: flex;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  .intro {
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* ========================
+FORM
+==================== */
+.email-collector{
+    width: 80%;
+    max-width: 300px;
+    
+}
+
+input,
+.btn{
+  width: 100%;
+  border-radius: 5px;
+
+}
+
+input{
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  border: 1px solid #404040;
+  transition: transform 250ms;
+
+}
+
+input:focus{
+  transform: scale(1.1);
+}
+
+.btn{
+  display: inline-block;
+  padding: .25em 1.5em;
+  font-size: 0.625em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+
+}
+
+ .btn-primary{
+  background-image: linear-gradient(to left,#ff713b,#ffa51d);
+  color: white;
+  transition: color 250ms  ;
+  transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+  transform: scale(1.05);
+  color: black  ;
+  
+}
